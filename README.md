@@ -37,7 +37,7 @@ react-router-dom: For handling routing/navigation between different pages.
 ## Setup Instructions
 
 1.Clone this repository to your local machine.
-    git clone 
+    git clone https://github.com/Toshifa/Stylin_App_Assignment.git
 
 2.Install all dependencies.
     npm install
