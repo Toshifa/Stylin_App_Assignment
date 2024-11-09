@@ -29,10 +29,10 @@ const features = [
 
 const WhyChoose: React.FC = () => {
   return (
-    <section className="py-10 px-4 sm:px-6 lg:px-16 bg-white">
+    <section className="py-10 px-4 sm:px-6 lg:px-16 bg-white ">
       {/* Section Title */}
       <div className="text-center mb-10 sm:mb-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900">Why Choose STYLIN?</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold lg:font-normal text-gray-900">Why Choose STYLIN?</h2>
       </div>
 
       {/* Feature Cards */}
@@ -40,7 +40,7 @@ const WhyChoose: React.FC = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            className="flex flex-col items-center p-6 bg-white border border-yellow-500 rounded-lg shadow-md hover:shadow-lg transition-shadow"
           >
             <img
               src={feature.icon}

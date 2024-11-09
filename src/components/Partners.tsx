@@ -33,7 +33,7 @@ const partners: Partner[] = [
 const GrowingTogether: React.FC = () => {
     return (
       <section className="py-10 px-4 sm:px-6 lg:px-24 bg-white text-center">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal mb-8 text-gray-800">Growing Together</h2>
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-normal lg:font-normal mb-8 text-gray-800">Growing Together</h2>
         
         <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {partners.map((partner, index) => (

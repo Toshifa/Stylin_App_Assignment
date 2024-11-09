@@ -27,15 +27,15 @@ const BackToTopSection: React.FC = () => {
   };
 
   return (
-    <section className="fixed bottom-4 right-4 sm:bottom-6 sm:right-8 lg:bottom-8 lg:right-12 flex justify-end z-50">
+    <section className="flex justify-end py-8 pr-8 md:pr-20 lg:pr-32">
       {isVisible && (
         <button
           onClick={scrollToTop}
           className="
-            w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 
-            rounded-lg lg:rounded-xl 
-            bg-white 
-            shadow-md lg:shadow-lg
+            w-[40px] h-[40px] md:w-[46px] md:h-[46px] lg:w-[72px] lg:h-[72px]
+            rounded-[16px] 
+            bg-[#FFFFFF] 
+            shadow-[rgba(0,0,0,0.3)_0px_4px_8px] 
             transition-transform duration-300 ease-in-out 
             hover:scale-105
             focus:outline-none
@@ -45,7 +45,7 @@ const BackToTopSection: React.FC = () => {
           <img 
             src={arrowIcon} 
             alt="Back to Top" 
-            className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 m-auto"
+            className="w-[25.53px] h-[26.1px] m-auto"
           />
         </button>
       )}
@@ -62,17 +62,7 @@ export default BackToTopSection;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+//My design
 
 
 // import React, { useEffect, useState } from 'react';
@@ -104,15 +94,15 @@ export default BackToTopSection;
 //   };
 
 //   return (
-//     <section className="flex justify-end py-8 pr-8 md:pr-20 lg:pr-32">
+//     <section className="fixed bottom-4 right-4 sm:bottom-6 sm:right-8 lg:bottom-8 lg:right-12 flex justify-end z-50">
 //       {isVisible && (
 //         <button
 //           onClick={scrollToTop}
 //           className="
-//             w-[72px] h-[72px] 
-//             rounded-[16px] 
-//             bg-[#FFFFFF] 
-//             shadow-[rgba(0,0,0,0.3)_0px_4px_8px] 
+//             w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 
+//             rounded-lg lg:rounded-xl 
+//             bg-white 
+//             shadow-md lg:shadow-lg
 //             transition-transform duration-300 ease-in-out 
 //             hover:scale-105
 //             focus:outline-none
@@ -122,7 +112,7 @@ export default BackToTopSection;
 //           <img 
 //             src={arrowIcon} 
 //             alt="Back to Top" 
-//             className="w-[25.53px] h-[26.1px] m-auto"
+//             className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 m-auto"
 //           />
 //         </button>
 //       )}
@@ -131,3 +121,9 @@ export default BackToTopSection;
 // };
 
 // export default BackToTopSection;
+
+
+
+
+
+

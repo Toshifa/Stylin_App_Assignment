@@ -78,10 +78,10 @@ const TopSalonsSection: React.FC = () => {
     <section className="py-10 px-4 sm:px-6 md:px-8 lg:px-20 xl:px-24">
       {/* Header */}
       <div className="flex items-center justify-between mb-6 sm:mb-8 lg:mb-10">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#020202]">Top Salons</h2>
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl sm:font-medium font-normal lg:font-normal text-[#020202]">Top Salons</h2>
         <button
           onClick={handleViewAllClick}
-          className="flex items-center text-[#020202] hover:text-black text-base sm:text-lg font-medium"
+          className="flex items-center text-[#020202] hover:text-black text-xs sm:text-xs md:text-sm lg:text-base font-medium"
         >
           View All
           <svg
@@ -97,7 +97,7 @@ const TopSalonsSection: React.FC = () => {
       </div>
 
       {/* Salon Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {salons.map((salon) => (
           <div key={salon.id} className="border border-gray-200 rounded-lg shadow-lg overflow-hidden relative">
             {/* Image with Tags and Favorite Icon */}

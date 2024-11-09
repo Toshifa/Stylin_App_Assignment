@@ -27,7 +27,7 @@ const brands: Brand[] = [
 const FeaturedBrands: React.FC = () => {
   return (
     <section className="py-10 px-4 sm:px-6 lg:px-24 bg-white text-center">
-      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal mb-8 text-gray-800">Featured Brands</h2>
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-normal lg:font-normal mb-8 text-gray-800">Featured Brands</h2>
       
       <div className="overflow-hidden relative">
         {/* Scrolling logos container */}

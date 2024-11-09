@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
         </h1>
 
         {/* Search Bar */}
-        <div className="mt-6 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-2 bg-white rounded-lg py-2 px-4 shadow-lg w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-[744px]">
+        <div className="mt-6 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-2 bg-white rounded-md py-2 px-4 shadow-lg w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-[744px] lg:h-[60px] md:h-[48px] sm:h-[104px]">
           {/* Location Select */}
           <div className="flex items-center space-x-2 w-full sm:w-auto">
             <select

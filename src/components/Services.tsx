@@ -33,10 +33,10 @@ const ServicesSection: React.FC = () => {
   };
 
   return (
-    <section className="mt-8 sm:mt-12 lg:mt-16 px-4 sm:px-6 lg:px-16 xl:px-20">
+    <section className="mt-8 sm:mt-12 lg:mt-16 px-4 sm:px-6 lg:px-16 xl:px-24">
       {/* Header */}
       <div className="flex items-center justify-between mb-4 sm:mb-6 lg:mb-10">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#020202]">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl sm:font-medium font-normal lg:font-normal text-[#020202]">
           Services
         </h2>
         <div className="flex space-x-2">
@@ -84,7 +84,7 @@ const ServicesSection: React.FC = () => {
       {/* Services List */}
       <div className="flex justify-center items-center">
         <div className="flex justify-center items-center space-x-4 sm:space-x-6 lg:space-x-8 gap-4 sm:gap-6 lg:gap-8">
-          {services.slice(visibleIndex, visibleIndex + 3).map((service, index) => (
+          {services.slice(visibleIndex, visibleIndex + 4).map((service, index) => (
             <div key={index} className="text-center min-w-[180px] sm:min-w-[220px] md:min-w-[250px]">
               <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-full overflow-hidden border border-gray-300 mx-auto">
                 <img

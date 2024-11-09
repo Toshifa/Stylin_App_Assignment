@@ -69,7 +69,7 @@ const ExpertProfessionalsSection: React.FC = () => {
     <section className="py-10 px-4 sm:px-6 lg:px-20 xl:px-24">
       {/* Header */}
       <div className="flex items-center justify-between mb-6 sm:mb-8 lg:mb-10">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#020202]">Expert Professionals</h2>
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl lg:font-normal font-medium text-[#020202]">Expert Professionals</h2>
         <button
           onClick={handleViewAllClick}
           className="flex items-center text-[#020202] hover:text-black text-base sm:text-lg font-medium"
