@@ -1,26 +1,60 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import HeroSection from './components/Hero';
+import ServicesSection from './components/Services';
+import TopSalonsSection from './components/ServiceCard';
+import ExpertProfessionalsSection from './components/Professionals';
+import WhyChoose from './components/Features';
+import ForBusiness from './components/Business';
+import TrustSection from './components/Testimonial';
+import FeaturedBrands from './components/Brands';
+import GrowingTogether from './components/Partners';
+import BackToTopButton from './components/FloatingButton';
+import SalonListingPage from './pages/salon_professional_Page';
+import ProfessionalList from './pages/ProfessionalList';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Layout>
+            <div>
+              <HeroSection />
+              <ServicesSection />
+              <TopSalonsSection />
+              <ExpertProfessionalsSection />
+              <WhyChoose />
+              <ForBusiness />
+              <TrustSection />
+              <FeaturedBrands />
+              <GrowingTogether />
+              <BackToTopButton />
+            </div>
+          </Layout>
+        }
+      />
+      <Route
+        path="/salons"
+        element={
+          <Layout>
+            <SalonListingPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/professionals"
+        element={
+          <Layout>
+            <ProfessionalList />
+          </Layout>
+        }
+      />
+    </Routes>
+
   );
-}
+};
 
 export default App;
