@@ -25,7 +25,7 @@ const SalonListingPage: React.FC = () => {
   return (
     <div className="container mx-auto py-6 px-4 sm:px-6 lg:px-16 xl:px-20">
       {/* Breadcrumb and Title */}
-      <div className="mb-6 mt-10">
+      <div className="mb-6 mt-20">
         <nav aria-label="breadcrumb" className="text-xs sm:text-sm text-gray-500 flex items-center gap-1 mb-4">
           <Link to="/" className="hover:text-black">Home</Link>
           <span className="text-gray-400"> &gt; </span>
